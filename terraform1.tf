@@ -27,7 +27,14 @@ variable "abc" {
   }
 }
 
-output  "abc" {
-  value = "value1 =  ${var.abc[string]},  value2 = ${var.abc[number]}"
+variable "array" {
+  default =  {
+    string ="abc" ,
+    number =123,
+    boolean =true,
+  }
+}
+output  "array" {
+  value = "value1 =  ${var.array[string]},  value2 = ${var.array[number]}"
 }
 

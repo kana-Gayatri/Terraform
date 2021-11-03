@@ -2,22 +2,22 @@
 #  value =  "Hello"
 #}
 
-
-variable  "Stringdatatype"  {
-  default = "string"
-}
-
-variable "numberdatatype" {
-  default =  123
-}
-
-variable "boolean" {
-  default =  true
-}
-
-variable "array" {
-  default =  ["abc" ,123, true]
-}
+#
+#variable  "Stringdatatype"  {
+#  default = "string"
+#}
+#
+#variable "numberdatatype" {
+#  default =  123
+#}
+#
+#variable "boolean" {
+#  default =  true
+#}
+#
+#variable "array" {
+#  default =  ["abc" ,123, true]
+#}
 
 variable "abc" {
   default =  {
@@ -28,6 +28,6 @@ variable "abc" {
 }
 
 output "abc" {
-  value = "value1 = ${var.abc[0]},  value2 = ${var.abc[1]}"
+  value = "value1 =  ${var.abc[0]},  value2 = ${var.abc[1]}"
 }
 

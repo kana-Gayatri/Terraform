@@ -1,6 +1,6 @@
-output  "abc" {
-  value =  "Hello"
-}
+#output  "abc" {
+#  value =  "Hello"
+#}
 
 
 variable  "Stringdatatype"  {

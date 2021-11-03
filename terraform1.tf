@@ -15,3 +15,8 @@ variable "boolean" {
   default =  true
 }
 
+variable "array"{
+  default =  ["abc" ,123, true]
+}
+
+

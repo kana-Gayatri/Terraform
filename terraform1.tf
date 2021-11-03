@@ -35,6 +35,6 @@ variable "array" {
   }
 }
 output  "array" {
-  value = "value1 =  ${var.array[string]},  value2 = ${var.array[number]}"
+  value = "value1 =  ${var.array[0]},  value2 = ${var.array[number]}"
 }
 

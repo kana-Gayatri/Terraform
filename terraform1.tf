@@ -27,7 +27,7 @@ variable "abc" {
   }
 }
 
-output "abc" {
-  value = "value1 =  ${var.abc[0]},  value2 = ${var.abc[1]}"
+output  "abc" {
+  value = "value1 =  ${var.abc[string]},  value2 = ${var.abc[number]}"
 }
 

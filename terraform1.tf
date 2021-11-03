@@ -27,12 +27,19 @@ variable "abc" {
   }
 }
 
-variable "array" {
+variable "array1" {
   default =  {
     string ="abc" ,
     number =123,
-    boolean =true,
+    boolean =true
   }
+}
+
+variable "array" {
+  default =  [     "string" ,
+      123,
+      true
+  ]
 }
 output  "array" {
   value = "value1 =  ${var.array[0]},  value2 = ${var.array[2]}"
